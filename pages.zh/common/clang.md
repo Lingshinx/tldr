@@ -1,7 +1,7 @@
 # clang
 
-> 编译 C，C++ 以及 Objective-C 源文件。可以无缝替代GCC。
-> LLVM 项目的组件之一
+> 编译 C，C++ 以及 Objective-C 源文件。可以无缝替代 GCC。
+> LLVM 项目的组件之一。
 > 更多信息：<https://clang.llvm.org/docs/ClangCommandLineReference.html>.
 
 - 将多个文件编译为可执行文件：
@@ -10,11 +10,11 @@
 
 - 打印所有错误和警告：
 
-`clang++ {{源/文件/的路径}} -Wall {{[-o|--output]}} {{可执行文件}}`
+`clang++ {{源/文件/的路径.c}} -Wall {{[-o|--output]}} {{可执行文件}}`
 
 - 打印普通警告和调试信息, 并在不影响调试的情况下优化：
 
-`clang++ {{源/文件/的路径.c}} -Wall {{[-g|--debug]}} -Og {{[-o|--output]}} {{可执行/文件/路径}}`
+`clang++ {{源/文件/的路径.c}} -Wall {{[-g|--debug]}} -Og {{[-o|--output]}} {{可执行/文件/的路径}}`
 
 - 包含与源文件不在同一路径下的库：
 
@@ -32,6 +32,6 @@
 
 `clang++ {{源/文件/的路径.c}} -O{{1|2|3|fast}} {{[-o|--output]}} {{可执行/文件/的路径}}`
 
-- 打印版本：
+- 打印版本信息：
 
 `clang --version`
