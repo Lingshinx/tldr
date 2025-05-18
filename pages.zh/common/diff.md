@@ -15,7 +15,7 @@
 
 `diff {{[-y|--side-by-side]}} {{原文件}} {{新文件}}`
 
-- Compare files, showing the differences in unified format （as used by `git diff`）：
+- 比较文件，以统一形式展示不同区别 （ 形式同 `git diff`）：
 
 `diff {{[-u|--unified]}} {{源文件}} {{新文件}}`
 
